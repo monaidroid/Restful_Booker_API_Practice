@@ -19,6 +19,17 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "bd535453-8b4c-4c22-9ddf-3675f8003eb8",
+						"exec": [
+							"// Test to pull request in github"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"id": "f598c57e-cbe6-459b-ba9b-f817b3109272",
