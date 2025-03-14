@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "2c9d0681-dbbc-4a59-9edb-62f6d1d32069",
+		"name": "Restful_Booker_API_Practice",
+		"description": "I am learning on API Testing and integrating \"collection\" with Github and jenkins.\n\nHere, I am attaching website link related to API Documentation.\n\nhttps://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken",
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth_CreateToken",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0cd0552e-ae5b-4bce-9cad-17831ef7e81f",
+						"exec": [
+							"// -------------------------------------",
+							"// Website link for API Documentation ",
+							"// https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken",
+							"// ----------------------------------------------"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "f598c57e-cbe6-459b-ba9b-f817b3109272",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://restful-booker.herokuapp.com/auth",
+				"description": "Generated from cURL: curl -X POST \\\n  https://restful-booker.herokuapp.com/auth \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Booking_IDs",
+			"id": "d9b1103d-6b54-4fa5-b7bd-9a919ee7a146",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/booking"
+			},
+			"response": []
+		}
+	]
+}
