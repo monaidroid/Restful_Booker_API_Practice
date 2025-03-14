@@ -12,12 +12,9 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "0cd0552e-ae5b-4bce-9cad-17831ef7e81f",
+						"id": "18ad735b-1c01-43ef-b150-2dcc3eb0e153",
 						"exec": [
-							"// -------------------------------------",
-							"// Website link for API Documentation ",
-							"// https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken",
-							"// ----------------------------------------------"
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
