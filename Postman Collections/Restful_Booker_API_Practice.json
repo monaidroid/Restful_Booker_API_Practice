@@ -25,7 +25,7 @@
 					"script": {
 						"id": "bd535453-8b4c-4c22-9ddf-3675f8003eb8",
 						"exec": [
-							"// Test to pull request in github"
+							"// Test to pull request in postman"
 						],
 						"type": "text/javascript",
 						"packages": {}
