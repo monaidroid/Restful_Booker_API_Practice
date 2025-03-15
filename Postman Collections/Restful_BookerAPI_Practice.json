@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "223268d3-754d-4f2c-8610-b17277cd5af3",
+		"name": "Restful_Booker_API_Practice",
+		"description": "I am learning on API Testing and integrating \"collection\" with Github and jenkins.\n\nHere, I am attaching website link related to API Documentation.\n\nhttps://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken",
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth_CreateToken",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "02295a38-95b5-4949-bd32-5901e4b8c747",
+						"exec": [
+							"// Add Line from Github in PreRequest script to test update feature"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "9dafe9b0-6724-4fa0-848b-04f1c630c09a",
+						"exec": [
+							"// Test to pull request in github",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "427b6c8a-f899-4ad7-816c-799606eb46bf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://restful-booker.herokuapp.com/auth",
+				"description": "Generated from cURL: curl -X POST \\\n  https://restful-booker.herokuapp.com/auth \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Booking_IDs",
+			"id": "6ae4e513-9ced-4b66-978a-6fa17da17478",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/booking"
+			},
+			"response": []
+		}
+	]
+}
