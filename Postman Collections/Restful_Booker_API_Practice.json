@@ -26,7 +26,11 @@
 						"id": "bd535453-8b4c-4c22-9ddf-3675f8003eb8",
 						"exec": [
 							"// Test to pull request in github",
-							""
+							"// Add new comment ",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {}
