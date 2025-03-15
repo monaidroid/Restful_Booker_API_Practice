@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "223268d3-754d-4f2c-8610-b17277cd5af3",
 		"name": "Restful_Booker_API_Practice",
-		"description": "I am learning on API Testing and integrating \"collection\" with Github and jenkins.\n\nHere, I am attaching website link related to API Documentation.\n\nhttps://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken",
+		"description": "I am learning on API Testing and integrating \"collection\" with Github and jenkins.\n\nHere, I am attaching website link related to API Documentation.\n\n[https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken](https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken)",
 		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
