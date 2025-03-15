@@ -25,7 +25,9 @@
 					"script": {
 						"id": "bd535453-8b4c-4c22-9ddf-3675f8003eb8",
 						"exec": [
-							"// Test to push request in Github 1234"
+							"// Test to pull request in github",
+							"// Test 1234",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
