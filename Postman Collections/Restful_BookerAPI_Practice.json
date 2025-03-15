@@ -85,7 +85,13 @@
 					"script": {
 						"id": "9d70b07e-415e-4f29-a42b-233400be0e48",
 						"exec": [
-							"// Add New API provide ID from previous API"
+							"// Add New API provide ID from previous API",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is greater than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.greaterThan(200);",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {}
