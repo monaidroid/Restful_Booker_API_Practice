@@ -14,7 +14,8 @@
 					"script": {
 						"id": "18ad735b-1c01-43ef-b150-2dcc3eb0e153",
 						"exec": [
-							"// Add Line from Github in PreRequest script to test update feature"
+							"// Add Line from Github in PreRequest script to test update feature",
+							"// Add New Line in prerequest from Postman__"
 						],
 						"type": "text/javascript",
 						"packages": {}
